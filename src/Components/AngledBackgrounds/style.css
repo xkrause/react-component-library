@@ -1,0 +1,161 @@
+/*
+I got this from FileSilo
+*/
+
+body {
+	font-family: Arial, serif;
+	background: #d7d9d9;
+	font-weight: 25000;
+	font-size: 18px;
+	color: black;
+}
+
+.container {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+.outer-container {
+	padding-top: 70px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background: url(../images/serenity.jpg) repeat-x top left;
+}
+
+.clr {
+	clear: both;
+}
+
+.outer-container > header {
+	padding: 50px 30px 10px 30px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.outer-container > header h1 {
+	font-family: 'Arial', sans-serif;;
+	font-size: 60px;
+	line-height: 40px;
+	position: relative;
+	font-weight: 450;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+}
+
+.outer-container > header h1 span {
+	color: #091e3d;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.outer-container > header h2 {
+	font-size: 18px;
+	font-style: italic;
+	padding: 0px 0px 15px 0px;
+}
+
+.angle {
+	margin: 0 -50px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.angle:nth-child(odd) {
+	border-top: 16px solid #091e3d;
+	background-color: lightblue;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	margin-top: -200px;
+}
+
+.angle:nth-child(even) {
+	background: #ccc url(../images/ghost-in-the-shell.jpg) repeat;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+.angle:first-child {
+	margin-top: 0px;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 130px 100px 250px 100px;
+}
+
+.content h3 {
+	font-size: 60px;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px 8px 30px;
+	height: 80px;
+	line-height: 80px;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content p {
+	width: 75%;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 10px;
+}
+
+.angle:nth-child(odd) .content {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 7);
+}
+
+.angle:nth-child(even) .content {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+	.outer-container > header{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.content h3 {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: 767px) {
+		.content p {
+			width: 95%;
+		}
+
+		.angle:nth-child(odd) .content, .angle:nth-child(even) .content {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+}
